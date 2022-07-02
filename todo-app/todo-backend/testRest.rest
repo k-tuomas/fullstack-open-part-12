@@ -1,0 +1,20 @@
+PUT http://localhost:3000/todos/62b8780c23af2f73a6a99582
+content-type: application/json
+
+{
+  "text": "test 123",
+  "done": false
+}
+
+####
+
+POST http://localhost:3000/todos
+content-type: application/json
+
+{
+  "text": "test 123",
+  "done": false
+}
+
+###
+DELETE http://localhost:3000/todos/62bffb65e65c8d37e520b9e7
