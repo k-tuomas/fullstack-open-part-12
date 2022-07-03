@@ -1,5 +1,6 @@
 node_modules
-build
 .dockerignore
 Dockerfile
 Dockerfile.prod
+../todo-backend/mongo_data
+../todo-backend/redis_data
