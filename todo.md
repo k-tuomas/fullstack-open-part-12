@@ -1,0 +1,3 @@
+- front cant contact back through nginx localhost:8080/api/blogs not found. What address should be request url?
+-setup dockerfile
+-setu docker-compose.yml

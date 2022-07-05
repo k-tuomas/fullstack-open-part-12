@@ -1,0 +1,62 @@
+GET http://localhost:3003/api/blogs
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2MTQ5NDhmOTM2ZDdlNDIwMzhiYjRhNjAiLCJpYXQiOjE2MzIxOTU0ODB9.xG4nbOE3u2arxS1BQwFZ_usBNKWhRNPBHQwPuDATNDs
+
+###
+
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InR1bWUiLCJpZCI6IjYxNGVhNjQzMmZjZGJkYzhkZjY1NmRiZiIsImlhdCI6MTYzMzQ0MzkxNCwiZXhwIjoxNjMzNDQ3NTE0fQ.EVWcSmimU_IfNQN_J2tM3i6iF1V2IfEa8VdKdT1Lfnc
+
+{
+    "title": "testi123",
+    "author": "tume",
+    "url": "testeri.testi/blog",
+    "likes": "0",
+    "userId": "614948f936d7e42038bb4a60"
+}
+
+###
+
+DELETE http://localhost:3003/api/blogs/615c60e35e70ef4633cce960
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxNDk0NzRjMzE3OTZmZDAxZDYyMDYxMCIsImlhdCI6MTYzMzQ0Mzk1NywiZXhwIjoxNjMzNDQ3NTU3fQ.3d2QJC53T95r9iKlsIWL9cPnkP1pVnsiBNahdakp380
+
+
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+
+
+GET http://localhost:3003/api/users
+Content-Type: application/json
+
+
+###
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "tume",
+    "password": "123"
+}
+
+###
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "root",
+    "password": "salainen"
+}
+
+###
